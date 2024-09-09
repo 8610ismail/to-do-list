@@ -105,3 +105,67 @@ button {
     color: red;
     cursor: pointer;
 }
+/* Mobile phones in portrait and landscape (up to 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Reduce the width for better fit on smaller screens */
+        margin: 50px auto;
+        padding: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for heading */
+    }
+
+    #todo-input {
+        padding: 8px; /* Reduce padding for input field */
+        font-size: 16px;
+    }
+
+    #add-button {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    li {
+        padding: 8px; /* Smaller padding for list items */
+        font-size: 14px;
+    }
+
+    #todo-list {
+        height: 40vh; /* Reduce height of the scrollable list */
+    }
+}
+
+/* Very small mobile phones (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%; /* Further reduce the container width */
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px; /* Even smaller font size for heading */
+    }
+
+    #todo-input {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    #add-button {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    li {
+        padding: 6px; /* Smaller padding for list items */
+        font-size: 12px;
+    }
+
+    #todo-list {
+        height: 35vh; /* Further reduce the height of the scrollable list */
+    }
+}
